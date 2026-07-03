@@ -340,10 +340,10 @@ function App() {
             proposta inicial, melhor janela de data e próximo passo.
           </p>
           <div className="contact-links">
-            <a href={whatsappHref} target="_blank" rel="noreferrer">
+            <span className="contact-link-static" aria-disabled="true">
               <MessageCircle size={18} aria-hidden="true" />
               WhatsApp
-            </a>
+            </span>
             <a href={mailHref}>
               <Mail size={18} aria-hidden="true" />
               contato@nortada.tur.br

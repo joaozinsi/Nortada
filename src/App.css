@@ -93,7 +93,8 @@ img {
 .nav-cta,
 .button,
 .route-tab,
-.contact-links a {
+.contact-links a,
+.contact-link-static {
   min-height: 42px;
   display: inline-flex;
   align-items: center;
@@ -617,10 +618,16 @@ h3 {
   margin-top: 28px;
 }
 
-.contact-links a {
+.contact-links a,
+.contact-link-static {
   padding: 0 14px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: var(--white);
+}
+
+.contact-link-static {
+  cursor: default;
+  user-select: none;
 }
 
 .contact-links a:hover {
