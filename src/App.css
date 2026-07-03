@@ -597,7 +597,7 @@ h3 {
   padding-bottom: 90px;
   background:
     linear-gradient(90deg, rgba(22, 33, 31, 0.9), rgba(22, 33, 31, 0.78)),
-    url("/assets/nortada-hero.png") center / cover;
+    url("/Nortada/assets/nortada-hero.png") center / cover;
   color: var(--white);
 }
 

@@ -7,6 +7,7 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   root: projectRoot,
+  base: '/Nortada/',
   plugins: [react()],
   server: {
     host: '127.0.0.1',

@@ -19,12 +19,14 @@ import {
   Wind,
 } from 'lucide-react';
 
+const assetPath = (fileName) => import.meta.env.BASE_URL + 'assets/' + fileName;
+
 const routes = [
   {
     id: 'costa',
     title: 'Costa de vento e sal',
     kicker: 'Trilha costeira',
-    image: '/assets/roteiro-costa.png',
+    image: assetPath('roteiro-costa.png'),
     icon: Waves,
     duration: '1 dia',
     group: '4 a 10 pessoas',
@@ -39,7 +41,7 @@ const routes = [
     id: 'serra',
     title: 'Serra de mesa posta',
     kicker: 'Cultura e sabor',
-    image: '/assets/roteiro-serra.png',
+    image: assetPath('roteiro-serra.png'),
     icon: Mountain,
     duration: '2 dias',
     group: '6 a 12 pessoas',
@@ -54,7 +56,7 @@ const routes = [
     id: 'noite',
     title: 'Água calma, céu aberto',
     kicker: 'Saída noturna',
-    image: '/assets/roteiro-noite.png',
+    image: assetPath('roteiro-noite.png'),
     icon: Navigation,
     duration: '4 horas',
     group: '2 a 8 pessoas',
@@ -152,7 +154,7 @@ function App() {
       <section className="hero" id="top">
         <img
           className="hero-image"
-          src="/assets/nortada-hero.png"
+          src={assetPath('nortada-hero.png')}
           alt="Grupo caminhando por uma trilha costeira ao pôr do sol"
         />
         <div className="hero-scrim" aria-hidden="true" />
